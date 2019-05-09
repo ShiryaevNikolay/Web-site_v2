@@ -5,7 +5,11 @@ $(document).ready(function () {
         if(f == false){
             $(this).toggleClass("div_active");
             $(".grid > div").not(this).hide();
-            f = true;        
+            f = true;
+            
+            $(".grid > div > h1").css({
+                "margin": "2% 0 0 2%"
+            }); 
         
             var buttom = "<a href='' class='buttom'><span></span></a>";
 
