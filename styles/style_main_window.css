@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+a {
+    color: rgba(3, 3, 3);
+}
+.grid a {
+    position: relative;
+    transition: all .5s;
+}
+.grid a div {
+    position: relative;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5) inset;
+    height: 100%;
+    width: 100%;
+    transition: all .5s;
+}
+.grid a:hover {
+    padding: 10px;
+}
+.grid a:hover div {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    padding: 0;
+    margin: 5% 0 0 5%;
+}
+.box-1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.box-2 {
+    grid-column: 3/5;
+    grid-row: 1;
+}
+.box-6 {
+    grid-column: 2/4;
+}
+.box-1:hover div {
+    background-color: rgba(255, 192, 203, 0.5);
+}
+.box-2:hover div {
+    background-color: rgba(144, 238, 144, 0.5);
+}
+.box-3:hover div {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+.box-4:hover div {
+    background-color: rgba(135, 206, 250, 0.5);
+}
+.box-5:hover div {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+.box-6:hover div {
+    background-color: rgba(255, 166, 0, 0.5);
+}
+.box-7:hover div {
+    background-color: rgba(128, 0, 128, 0.5);
+}

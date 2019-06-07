@@ -1,13 +1,13 @@
 $(document).ready(function () {
     var f = false;
 
-    $(".grid > div").click(function () {
+    $(".grid > a").click(function () {
         if(f == false){
             $(this).toggleClass("div_active");
-            $(".grid > div").not(this).hide();
+            $(".grid > a").not(this).hide();
             f = true;
             
-            $(".grid > div > h1").css({
+            $(".grid > a > h1").css({
                 "margin": "2% 0 0 2%"
             }); 
         
